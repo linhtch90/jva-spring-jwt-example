@@ -1,0 +1,46 @@
+POST http://localhost:8080/user/saveuser
+Content-Type: application/json
+
+{
+    "username": "ds2525",
+    "password": "donotforgetme",
+    "email": "ds2525@gmail.com",
+    "roles": ["Admin","Manager"]
+}
+
+###
+POST http://localhost:8080/user/saveuser
+Content-Type: application/json
+
+{
+    "username": "mn2525",
+    "password": "donotforgetme",
+    "email": "mn2525@gmail.com",
+    "roles": ["Manager"]
+}
+
+### 
+POST http://localhost:8080/user/loginuser
+Content-Type: application/json
+
+{
+    "username": "ds2525",
+    "password": "donotforgetme"
+}
+
+###
+POST http://localhost:8080/user/loginuser
+Content-Type: application/json
+
+{
+    "username": "mn2525",
+    "password": "donotforgetme"
+}
+
+###
+POST http://localhost:8080/user/getdata
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJ0azk5MzEiLCJzdWIiOiJtbjI1MjUiLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY0MDE4NzI5NywiZXhwIjoxNjQwMTkwODk3fQ._HaCPfkWZK7I1aGo4ukFfFlwl6d-0NeBb4cT0auc77NMy9a-KGwRlKGAEskr4cmms_aWhnuAk5NXHcGHY3XSqg
+
+###
+POST http://localhost:8080/user/getdataadmin
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJ0azk5MzEiLCJzdWIiOiJtbjI1MjUiLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY0MDE4NzI5NywiZXhwIjoxNjQwMTkwODk3fQ._HaCPfkWZK7I1aGo4ukFfFlwl6d-0NeBb4cT0auc77NMy9a-KGwRlKGAEskr4cmms_aWhnuAk5NXHcGHY3XSqg
